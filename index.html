@@ -1,0 +1,1171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Bean Cafe</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER (Overlay on Hero) -->
+  <header class="site-header position-absolute top-0 start-0 w-100 z-3">
+    <!-- Top Social Bar -->
+    <div class="top-bar py-2">
+      <div class="container d-flex justify-content-end">
+        <div class="social-icons d-flex gap-3">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+      <div class="container">
+
+        <!-- Left: Search + Brand-ish link (optional) -->
+        <div class="d-flex align-items-center gap-3 order-lg-1 order-2">
+          <button class="icon-btn" type="button" aria-label="Search" data-open-search>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Center Logo -->
+          <a class="navbar-brand brand-center" href="#">
+      <img src="World-Bean-Logo (1).webp" alt="World Bean Logo" class="brand-logo">
+    </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler order-lg-3 order-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Nav -->
+        <div class="collapse navbar-collapse order-lg-3 order-4" id="mainNav">
+          <ul class="navbar-nav align-items-lg-center w-100">
+
+            <!-- Left Nav Links -->
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+           <li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="categoriesDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Our Categories
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+    <li><a class="dropdown-item" href="#">Authentic Coffee Blends</a></li>
+    <li><a class="dropdown-item" href="#">6 Seconds</a></li>
+    <li><a class="dropdown-item" href="#">Crafted Speciality Blends</a></li>
+    <li><a class="dropdown-item" href="#">Crafted Roasted Beans</a></li>
+    <li><a class="dropdown-item" href="#">Snacks &amp; Savouries</a></li>
+    <li><a class="dropdown-item" href="#">Cookies</a></li>
+    <li><a class="dropdown-item" href="#">Jaggery</a></li>
+    <li><a class="dropdown-item" href="#">Tea</a></li>
+    <li><a class="dropdown-item" href="#">The Coffee Curio</a></li>
+    <li><a class="dropdown-item" href="#">Pour Over</a></li>
+  </ul>
+</li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+
+            <!-- Spacer pushes right links to right on desktop -->
+            <li class="nav-item d-none d-lg-block flex-grow-1"></li>
+
+            <!-- Right Nav Links -->
+            <li class="nav-item"><a class="nav-link" href="#">Our Stores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+            <!-- Icons -->
+            <li class="nav-item d-flex align-items-center gap-3 ms-lg-3 mt-3 mt-lg-0">
+              <button class="icon-btn" type="button" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+              </button>
+              <button class="icon-btn" type="button" aria-label="Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section position-relative">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="coffee.mp4.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+      <div class="hero-content">
+        <h1 class="hero-title">A SIP OF HOME</h1>
+        <p class="hero-subtitle">A TASTE OF NOSTALGIA</p>
+        <a href="#products" class="btn btn-outline-light hero-btn">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section py-5" id="products">
+    <div class="container">
+
+  <div class="text-center mb-4">
+  <h2 class="section-title m-0">Best Sellers</h2>
+  <a href="#" class="view-all-btn mt-2 d-inline-block">VIEW ALL</a>
+</div>
+
+      <!-- Responsive Grid -->
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="W.jpeg" alt="Classic Coffee Powder" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 480.00</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="ee.jpeg" alt="Premium Coffee" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Premium Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 600.00</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+            <p class="product-price">₹ 320.00</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="WhatsApp Image 2026-03-04 at 1.46.01 PM.jpeg" alt="Mysore Coffee" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Mysore Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 560.00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- BANNER (Image + Right Content Box) -->
+<section class="wb-banner">
+  <div class="wb-banner-overlay"></div>
+
+  <div class="container h-100 position-relative">
+    <div class="wb-banner-card">
+      <h6 class="wb-banner-title">Uncompromising in Quality</h6>
+
+      <p class="wb-banner-text">
+        Quality of ingredients is what sets great food apart from good food.
+        Which is why we handpick our ingredients so that we can guarantee a
+        top-tier culinary experience.
+      </p>
+
+      <a href="#products" class="wb-banner-btn">GRAB NOW</a>
+    </div>
+  </div>
+</section>
+<!-- SHOP BY CATEGORY -->
+<section class="category-section py-5" id="categories">
+  <div class="container">
+
+    <!-- Heading -->
+    <h2 class="category-title text-center mb-5">Shop By Category</h2>
+
+    <!-- Items -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="eeee.webp" alt="Authentic Coffee Blends">
+          <p>Authentic Coffee Blends</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="fr.webp" alt="Crafted Roasted Beans">
+          <p>Crafted Roasted Beans</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="ee.webp" alt="Hatti 6 Seconds">
+          <p>Hatti 6 Seconds</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="rrrrrrrrrrrrt.webp" alt="The Coffee Curio">
+          <p>The Coffee Curio</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="rt.webp" alt="Snacks & Savouries">
+          <p>Snacks &amp; Savouries</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="#" class="category-item">
+          <img src="fr.webp" alt="Cookies">
+          <p>Cookies</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- VIDEO BANNER -->
+<section class="video-banner">
+  <video class="video-banner-video" autoplay muted loop playsinline poster="snacks-poster.jpg">
+    <source src="coffee.mp4.mp4" type="video/mp4">
+  </video>
+
+  <div class="video-banner-overlay"></div>
+
+  <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+    <div class="video-banner-content">
+      <h2 class="video-banner-title">CRAVINGS CALLING ?</h2>
+      <p class="video-banner-subtitle">We've got the snacks to answer</p>
+      <a href="#products" class="btn btn-outline-light video-banner-btn">SHOP NOW</a>
+    </div>
+  </div>
+</section>
+  <section class="products-section py-5" id="products">
+    <div class="container">
+
+  <div class="text-center mb-4">
+  <h2 class="section-title m-0">Our Product</h2>
+  <a href="#" class="view-all-btn mt-2 d-inline-block">VIEW ALL</a>
+</div>
+
+      <!-- Responsive Grid -->
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="W.jpeg" alt="Classic Coffee Powder" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 480.00</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="ee.jpeg" alt="Premium Coffee" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Premium Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 600.00</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+            <p class="product-price">₹ 320.00</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="WhatsApp Image 2026-03-04 at 1.46.01 PM.jpeg" alt="Mysore Coffee" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Mysore Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 560.00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="hero-banner">
+  <div class="hero-content">
+<a href="#" class="hero-link">
+  <p class="hero-text">Kaapi that make you believe in love at first sip</p>
+</a>
+    <a href="#shop" class="hero-btn">SHOP NOW</a>
+  </div>
+</section>
+ <section class="products-section py-5" id="products">
+    <div class="container">
+
+  <div class="text-center mb-4">
+  <h2 class="section-title m-0">Our Product</h2>
+  <a href="#" class="view-all-btn mt-2 d-inline-block">VIEW ALL</a>
+</div>
+
+      <!-- Responsive Grid -->
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="W.jpeg" alt="Classic Coffee Powder" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 480.00</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="ee.jpeg" alt="Premium Coffee" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Premium Coffee Powder (200 g)</h3>
+            <p class="product-price">₹ 600.00</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-image position-relative overflow-hidden">
+              <img src="rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+              <button class="cart-btn" type="button" aria-label="Add to cart">
+                <i class="fa-solid fa-bag-shopping">Sold Out</i>
+              </button>
+              <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+            </div>
+            <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+            <p class="product-price">₹ 320.00</p>
+          </div>
+        </div>
+<section class="bestsellers">
+  <div class="bestsellers-wrap">
+    <h2 class="bestsellers-title">Our Bestsellers</h2>
+
+    <div class="row g-4 align-items-stretch">
+      <!-- BIG Banner -->
+      <div class="col-12 col-lg-8">
+        <div class="bestsellers-banner"></div>
+      </div>
+
+      <!-- SMALL Product Card -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="product-card small-card">
+          <div class="product-image position-relative overflow-hidden">
+            <img src="rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span></span>
+            </button>
+
+            <button class="view-product-btn" type="button">VIEW PRODUCT</button>
+          </div>
+
+          <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+          <p class="product-price">₹ 320.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-hero" id="about">
+  <!-- Background image (your screenshot image) -->
+  <div class="about-bg reveal reveal-zoom" style="--d:120ms;"></div>
+
+  <div class="about-inner">
+    <div class="about-content">
+      <p class="about-kicker reveal reveal-down" style="--d:0ms;">
+        MORE THAN JUST A COFFEE SHOP
+      </p>
+
+      <h2 class="about-title reveal reveal-down" style="--d:120ms;">
+        With just one sip of our kaapi, you'll discover the labour of love poured into every cup.
+      </h2>
+
+      <p class="about-text reveal reveal-up" style="--d:220ms;">
+        But what truly sets us apart is the heart behind our brew. Hatti Kaapi thrives on the
+        incredible spirit of our Hatti Heroes — the specially-abled and senior citizens who power our brand.
+      </p>
+
+      <a href="#know" class="about-btn reveal reveal-up" style="--d:320ms;">
+        KNOW ABOUT US
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+  const els = document.querySelectorAll(".reveal");
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-visible");
+        io.unobserve(e.target); // remove if you want repeat animation
+      }
+    });
+  }, { threshold: 0.2 });
+
+  els.forEach(el => io.observe(el));
+</script>
+
+<section class="freshness-section">
+  <div class="freshness-wrap">
+    <h2 class="freshness-title">Rich Always look for our stamp of freshness</h2>
+
+    <div class="freshness-grid">
+      <!-- 1 -->
+      <div class="freshness-card">
+        <div class="freshness-icon">
+          <!-- Hand + heart icon (SVG) -->
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M10 30v18c0 4 3 7 7 7h12c6 0 11-4 13-9l3-8" />
+            <path d="M22 28l7 5 9-7c4-3 10-1 10 5v10" />
+            <path d="M14 24l10 8" />
+            <path d="M40 18c2-3 6-3 8 0 2 3 0 6-4 9-4-3-6-6-4-9z" />
+          </svg>
+        </div>
+        <h3>ETHICALLY SOURCED</h3>
+        <p>
+          We work closely with producers to ensure that the beans are of the highest
+          quality, grown sustainably and traded responsibly.
+        </p>
+      </div>
+
+      <!-- 2 -->
+      <div class="freshness-card">
+        <div class="freshness-icon">
+          <!-- Roaster icon (SVG) -->
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="14" y="10" width="26" height="30" rx="3" />
+            <circle cx="46" cy="24" r="7" />
+            <path d="M20 18h14M20 24h14M20 30h10" />
+            <path d="M44 44c-4 2-8 2-12 0-4-2-8-2-12 0" />
+            <path d="M34 52c-3 2-6 2-9 0-3-2-6-2-9 0" />
+          </svg>
+        </div>
+        <h3>FRESHLY ROASTED</h3>
+        <p>
+          We specially roast your coffee in our in-house, state-of-the-art coffee roaster
+          with specific profiles to ensure optimal flavour notes.
+        </p>
+      </div>
+
+      <!-- 3 -->
+      <div class="freshness-card">
+        <div class="freshness-icon">
+          <!-- Delivery icon (SVG) -->
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M10 18h28v26H10z" />
+            <path d="M38 26h10l6 8v10H38z" />
+            <circle cx="18" cy="46" r="4" />
+            <circle cx="46" cy="46" r="4" />
+            <path d="M14 14c3 0 4-3 7-3s4 3 7 3 4-3 7-3" />
+          </svg>
+        </div>
+        <h3>SAFELY DELIVERED</h3>
+        <p>
+          We do our best to ensure that your coffee reaches you properly packaged,
+          completely fresh and well in time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gift-section">
+  <div class="gift-wrap">
+
+    <!-- LEFT IMAGE -->
+    <div class="gift-left">
+      <img src="ChatGPT Image Mar 5, 2026, 01_03_35 PM.png" alt="Gift hampers" class="gift-img">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="gift-right">
+      <h2 class="gift-title">Last Minute gifting struggles?</h2>
+      <p class="gift-subtitle">Shop our go-to gift hampers</p>
+
+      <a href="#" class="gift-btn">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="test-wrap">
+    <h2 class="test-title">Testimonials</h2>
+
+    <div class="test-row" aria-live="polite">
+      <!-- Left -->
+      <article class="test-card side" id="t-left">
+        <div class="stars" id="t-left-stars">★★★★★</div>
+        <p class="test-text" id="t-left-text"></p>
+        <div class="test-person">
+          <img id="t-left-img"  class="avatar"  src="rrrrrrrrrrrrt.jpeg" alt="">
+          <h3 class="name" id="t-left-name"></h3>
+          <p class="role" id="t-left-role"></p>
+        </div>
+      </article>
+
+      <!-- Center (main) -->
+      <article class="test-card main" id="t-main">
+        <div class="stars" id="t-main-stars">★★★★★</div>
+        <p class="test-text" id="t-main-text"></p>
+        <div class="test-person">
+          <img id="t-main-img" class="avatar"   src="rrrrrrrrrrrrt.jpeg"alt="">
+          <h3 class="name" id="t-main-name"></h3>
+          <p class="role" id="t-main-role"></p>
+        </div>
+      </article>
+
+      <!-- Right -->
+      <article class="test-card side" id="t-right">
+        <div class="stars" id="t-right-stars">★★★★★</div>
+        <p class="test-text" id="t-right-text"></p>
+        <div class="test-person">
+         <img id="t-right-img" class="avatar" src="ee copy.jpeg" alt="User">
+          <h3 class="name" id="t-right-name"></h3>
+          <p class="role" id="t-right-role"></p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Dots -->
+    <div class="test-dots" id="test-dots" aria-label="Testimonial navigation"></div>
+  </div>
+</section>
+<script>
+  // 1) Edit your testimonials here
+  const testimonials = [
+    {
+      stars: 5,
+      text: "Namma Bengaluru welcomes me with Cool Weather & amazing Filter Coffee",
+      name: "Ashish Vidyarthi",
+      role: "",
+      img: "user1.jpg"
+    },
+    {
+      stars: 5,
+      text: "Bella Kaapi, Coffee with Jaggery - all time favourite. Everytime I land at Bengaluru Airport.",
+      name: "Saransh Goila, Indian Chef",
+      role: "",
+      img: "user2.jpg"
+    },
+    {
+      stars: 5,
+      text: "Absolutely Lovely Coffee! Food was enjoyable as well.",
+      name: "Yadhuveer Krishnadatta Chamaraja Wodeyar",
+      role: "King of Mysore",
+      img: "user3.jpg"
+    },
+    {
+      stars: 5,
+      text: "Best filter coffee taste. Great aroma and quick service.",
+      name: "Customer Review",
+      role: "",
+      img: "user4.jpg"
+    },
+    {
+      stars: 5,
+      text: "Perfect place for a strong kaapi and snacks. Loved it!",
+      name: "Customer Review",
+      role: "",
+      img: "user5.jpg"
+    }
+  ];
+
+  // Helpers
+  const starStr = (n) => "★★★★★".slice(0, n);
+
+  const left = {
+    card: document.getElementById("t-left"),
+    stars: document.getElementById("t-left-stars"),
+    text: document.getElementById("t-left-text"),
+    img: document.getElementById("t-left-img"),
+    name: document.getElementById("t-left-name"),
+    role: document.getElementById("t-left-role")
+  };
+  const main = {
+    card: document.getElementById("t-main"),
+    stars: document.getElementById("t-main-stars"),
+    text: document.getElementById("t-main-text"),
+    img: document.getElementById("t-main-img"),
+    name: document.getElementById("t-main-name"),
+    role: document.getElementById("t-main-role")
+  };
+  const right = {
+    card: document.getElementById("t-right"),
+    stars: document.getElementById("t-right-stars"),
+    text: document.getElementById("t-right-text"),
+    img: document.getElementById("t-right-img"),
+    name: document.getElementById("t-right-name"),
+    role: document.getElementById("t-right-role")
+  };
+
+  const dotsWrap = document.getElementById("test-dots");
+
+  let current = 1; // center index (start on 2nd like screenshot)
+
+  // Build dots
+  testimonials.forEach((_, i) => {
+    const b = document.createElement("button");
+    b.className = "dot" + (i === current ? " active" : "");
+    b.setAttribute("aria-label", `Slide ${i + 1}`);
+    b.addEventListener("click", () => {
+      current = i;
+      render();
+      restartAutoplay();
+    });
+    dotsWrap.appendChild(b);
+  });
+
+  function setCard(el, data){
+    el.stars.textContent = starStr(data.stars);
+    el.text.textContent = data.text;
+    el.img.src = data.img;
+    el.img.alt = data.name;
+    el.name.textContent = data.name;
+    el.role.textContent = data.role || "";
+    el.role.style.display = data.role ? "block" : "none";
+  }
+
+  function updateDots(){
+    [...dotsWrap.children].forEach((d, i) => {
+      d.classList.toggle("active", i === current);
+    });
+  }
+
+  function fadeSwap(){
+    [left.card, main.card, right.card].forEach(c => {
+      c.classList.add("fade-swap");
+      c.classList.remove("show");
+    });
+    requestAnimationFrame(() => {
+      [left.card, main.card, right.card].forEach(c => c.classList.add("show"));
+    });
+  }
+
+  function render(){
+    const L = (current - 1 + testimonials.length) % testimonials.length;
+    const R = (current + 1) % testimonials.length;
+
+    fadeSwap();
+    setCard(left, testimonials[L]);
+    setCard(main, testimonials[current]);
+    setCard(right, testimonials[R]);
+    updateDots();
+  }
+
+  // Autoplay (stop if user prefers reduced motion)
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let timer = null;
+
+  function startAutoplay(){
+    if (prefersReduced) return;
+    timer = setInterval(() => {
+      current = (current + 1) % testimonials.length;
+      render();
+    }, 3500);
+  }
+
+  function restartAutoplay(){
+    if (timer) clearInterval(timer);
+    startAutoplay();
+  }
+
+  render();
+  startAutoplay();
+</script>
+<section class="double-promo">
+  <div class="double-wrap">
+
+    <!-- Card 1 -->
+    <div class="promo-card">
+      <img src="ChatGPT Image Mar 5, 2026, 12_25_14 PM.png" alt="Coffee Products" class="promo-img">
+      <a href="#" class="promo-btn">SHOP NOW</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="promo-card">
+      <img src="ChatGPT Image Mar 5, 2026, 12_25_14 PM.png" alt="Cookies Products" class="promo-img">
+      <a href="#" class="promo-btn">EXPLORE MORE</a>
+    </div>
+
+  </div>
+</section>
+<section class="presence" id="presence">
+  <div class="presence-wrap">
+    <h2 class="presence-title">Our Presence</h2>
+
+    <div class="presence-slider" data-delay="2500">
+      <!-- Slide 1 -->
+      <div class="presence-slide is-active">
+        <div class="presence-grid">
+          <img src="myntra-logo-png_seeklogo-513444.png" alt="myntra">
+          <img src="image.png" alt="The Leela">
+          <img src="vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png" alt="INOX">
+          <img src="image.png" alt="Prestige Group">
+          <img src="godrej-logo-png_seeklogo-61760.png" alt="Deloitte">
+          <img src="SES.png" alt="Brigade Group">
+          <img src="World-Bean-Logo (1).webp" alt="TCS">
+          <img src="arrr.png" alt="SAP">
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="presence-slide">
+        <div class="presence-grid">
+          <img src="logos/tesco.png" alt="Tesco">
+          <img src="logos/myntra.png" alt="Myntra">
+          <img src="logos/manipal.png" alt="Manipal Hospitals">
+          <img src="logos/ramaiah.png" alt="Ramaiah Memorial Hospital">
+          <img src="logos/rainbow.png" alt="Rainbow Children's Hospital">
+          <img src="logos/reliance.png" alt="Reliance Industries">
+          <img src="logos/godrej.png" alt="Godrej">
+          <img src="arrr.png" alt="Flipkart">
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+     
+
+      <!-- dots auto created by JS -->
+      <div class="presence-dots" aria-label="Presence navigation"></div>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sliders = document.querySelectorAll(".presence-slider");
+
+  sliders.forEach((slider) => {
+    const slides = Array.from(slider.querySelectorAll(".presence-slide"));
+    if (slides.length === 0) return;
+
+    // Ensure dots container exists
+    let dotsWrap = slider.querySelector(".presence-dots");
+    if (!dotsWrap) {
+      dotsWrap = document.createElement("div");
+      dotsWrap.className = "presence-dots";
+      slider.appendChild(dotsWrap);
+    }
+
+    // Ensure first slide active
+    slides.forEach(s => s.classList.remove("is-active"));
+    slides[0].classList.add("is-active");
+
+    const delay = Number(slider.dataset.delay || 2500);
+    let current = 0;
+    let timer = null;
+
+    // Build dots
+    dotsWrap.innerHTML = "";
+    slides.forEach((_, i) => {
+      const b = document.createElement("button");
+      b.className = "presence-dot" + (i === 0 ? " active" : "");
+      b.type = "button";
+      b.addEventListener("click", () => {
+        goTo(i);
+        restart();
+      });
+      dotsWrap.appendChild(b);
+    });
+
+    function setDots() {
+      Array.from(dotsWrap.children).forEach((d, i) => {
+        d.classList.toggle("active", i === current);
+      });
+    }
+
+    function goTo(next) {
+      slides[current].classList.remove("is-active"); // fade out
+      current = next;
+      setDots();
+
+      setTimeout(() => {
+        slides[current].classList.add("is-active"); // fade in
+      }, 180);
+    }
+
+    function nextSlide() {
+      goTo((current + 1) % slides.length);
+    }
+
+    function start() {
+      if (timer) return;
+      timer = setInterval(nextSlide, delay);
+    }
+
+    function stop() {
+      clearInterval(timer);
+      timer = null;
+    }
+
+    function restart() {
+      stop();
+      start();
+    }
+
+    // Start only when visible
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) start();
+        else stop();
+      });
+    }, { threshold: 0.2 });
+
+    io.observe(slider);
+  });
+});
+</script>
+
+<section class="blog-section" id="blog">
+  <div class="blog-wrap">
+
+    <div class="blog-head">
+      <h2 class="blog-title">Blog posts</h2>
+      <a href="#" class="blog-viewall">VIEW ALL</a>
+    </div>
+
+    <div class="blog-grid">
+      <!-- Card 1 -->
+      <article class="blog-card">
+        <a href="#" class="blog-imglink">
+          <img src="world_bean_blog_1.png" alt="Blog 1" class="blog-img">
+        </a>
+        <p class="blog-date">Mar 04, 2025</p>
+        <h3 class="blog-post-title">
+          <a href="#">A Royal Surprise: When the Maharaja of Mysore Graced HattiKaapi’s Ulsoor Café</a>
+        </h3>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="blog-card">
+        <a href="#" class="blog-imglink">
+          <img src="world_bean_blog_2.png" alt="Blog 2" class="blog-img">
+        </a>
+        <p class="blog-date">Mar 04, 2025</p>
+        <h3 class="blog-post-title">
+          <a href="#">HattiKaapi: A Humble Beginning in the Heart of Bangalore</a>
+        </h3>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="blog-card">
+        <a href="#" class="blog-imglink">
+          <img src="world_bean_blog_3.png" alt="Blog 3" class="blog-img">
+        </a>
+        <p class="blog-date">Mar 04, 2025</p>
+        <h3 class="blog-post-title">
+          <a href="#">HattiKaapi: Brewing Inclusion, One Cup at a Time</a>
+        </h3>
+      </article>
+    </div>
+
+  </div>
+</section>
+<section class="location-hero">
+  <div class="location-bg"></div>
+
+  <div class="location-wrap">
+    <div class="location-card">
+      <h3 class="location-title">World Bean Coffee:</h3>
+
+      <p class="location-text">
+       28, 80 Feet Rd, S.T. Bed, Cauvery Colony, Koramangala, Bengaluru, Karnataka 560034
+      </p>
+
+      <p class="location-time">Mon - Sat, 9:30 am - 6:30 pm</p>
+
+      <a class="location-btn" href="https://maps.app.goo.gl/5knadY1T3pBdPi2k7" target="_blank" rel="noopener">
+        GET DIRECTIONS
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-wrap">
+
+    <!-- Column 1 -->
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <img src="World-Bean-Logo (1).webp" alt="World Bean Coffee" class="footer-logo-img">
+        <span class="footer-logo-text">World Bean Coffee</span>
+      </div>
+
+      <h4 class="footer-heading">WORLD BEAN COFFEE PRIVATE LIMITED</h4>
+
+      <p class="footer-text">
+      28, 80 Feet Rd, S.T. Bed, Cauvery Colony, Koramangala, Bengaluru, Karnataka 560034
+      </p>
+
+      <p class="footer-text"><strong>CIN:</strong> U15400KA2015PTC078831</p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Categories</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our Stores</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns &amp; Shipping</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Franchise &amp; Export</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col footer-newsletter">
+      <h4 class="footer-news-title">SIGN UP AND SAVE</h4>
+      <p class="footer-text">
+        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+      </p>
+
+      <form class="footer-form" action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" aria-label="Subscribe">
+          ✉
+        </button>
+      </form>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">⌁</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 World Bean Coffee</p>
+    <p class="powered">Powered by Shopify</p>
+  </div>
+</footer>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-head">
+    <form class="search-form" id="siteSearchForm" action="#" method="get">
+      <input
+        id="siteSearchInput"
+        class="search-input"
+        type="search"
+        placeholder="Search"
+        autocomplete="off"
+      />
+      <button class="search-submit" type="submit" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <button class="search-close" type="button" data-close-search aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("searchOverlay");
+  const openBtn = document.querySelector("[data-open-search]");
+  const closeBtn = document.querySelector("[data-close-search]");
+  const input = document.getElementById("siteSearchInput");
+  const form = document.getElementById("siteSearchForm");
+
+  // cards to filter
+  const productCards = Array.from(document.querySelectorAll(".product-card"));
+  const blogCards = Array.from(document.querySelectorAll(".blog-card"));
+
+  function findCol(el){
+    // hides the bootstrap column so gaps won't stay
+    let p = el;
+    while (p && p !== document.body) {
+      if (/\bcol-/.test(p.className)) return p;
+      p = p.parentElement;
+    }
+    return el;
+  }
+
+  function openSearch(){
+    overlay.classList.add("is-open");
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("no-scroll");
+    setTimeout(() => input.focus(), 0);
+  }
+
+  function closeSearch(){
+    overlay.classList.remove("is-open");
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("no-scroll");
+    input.value = "";
+    filterAll(""); // reset
+  }
+
+  function filterAll(q){
+    const term = q.trim().toLowerCase();
+
+    // products
+    productCards.forEach(card => {
+      const col = findCol(card);
+      const text = card.innerText.toLowerCase();
+      col.style.display = (term === "" || text.includes(term)) ? "" : "none";
+    });
+
+    // blogs
+    blogCards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.style.display = (term === "" || text.includes(term)) ? "" : "none";
+    });
+  }
+
+  openBtn?.addEventListener("click", openSearch);
+  closeBtn?.addEventListener("click", closeSearch);
+
+  // click outside (optional)
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeSearch();
+  });
+
+  // ESC close
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("is-open")) closeSearch();
+  });
+
+  // Live filter while typing
+  input.addEventListener("input", () => filterAll(input.value));
+
+  // prevent form reload on submit (needed so overlay stays) :contentReference[oaicite:0]{index=0}
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    filterAll(input.value);
+    // optionally close after search:
+    // closeSearch();
+  });
+});
+</script>
+  <!-- Bootstrap JS (required for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
