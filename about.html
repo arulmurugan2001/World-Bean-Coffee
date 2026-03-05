@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | World Bean Cafe</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- About CSS -->
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <!-- Top Social Bar -->
+    <div class="top-bar py-2">
+      <div class="container d-flex justify-content-end">
+        <div class="social-icons d-flex gap-3">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light about-navbar">
+      <div class="container position-relative">
+
+        <!-- Left search -->
+        <button class="icon-btn" type="button" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Center Logo -->
+        <a class="navbar-brand brand-center" href="index.html">
+          <img src="images/World-Bean-Logo (1).webp" alt="World Bean Logo" class="brand-logo">
+        </a>
+
+        <!-- Mobile toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#aboutNav"
+          aria-controls="aboutNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="aboutNav">
+          <ul class="navbar-nav w-100 align-items-lg-center">
+
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Categories</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Authentic Coffee Blends</a></li>
+                <li><a class="dropdown-item" href="#">Crafted Roasted Beans</a></li>
+                <li><a class="dropdown-item" href="#">Snacks & Savouries</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
+
+            <li class="nav-item d-none d-lg-block flex-grow-1"></li>
+
+            <li class="nav-item"><a class="nav-link" href="stores.html">Our Stores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+            <li class="nav-item d-flex gap-3 ms-lg-3 mt-3 mt-lg-0">
+              <button class="icon-btn" type="button" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+              </button>
+              <button class="icon-btn" type="button" aria-label="Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-title">
+      <h1>ABOUT US</h1>
+    </div>
+  </section>
+
+  <section class="our-story">
+  <div class="container">
+
+    <!-- Center story block -->
+    <h2 class="story-title">Our Story</h2>
+    <div class="story-intro">
+      <p>
+        In 2009, we set up our very first store in Gandhi Bazaar, Bengaluru with one vision:
+        With an efficient team delighting customers and driving growth through unique products and initiatives,
+        we have grown to 110 outlets, spread across the continent.
+      </p>
+      <p>
+        World Bean Coffee had its humble beginnings in one of the traditional coffee growing districts of Karnataka.
+      </p>
+    </div>
+
+    <!-- 2 column block (left text, right image) -->
+    <div class="story-row">
+      <div class="story-left">
+        <h3>Uncompromising in Quality</h3>
+        <p>
+          Quality of ingredients is what sets great food apart from good food.
+          Which is why we handpick our ingredients so that we can guarantee a top-tier culinary experience.
+        </p>
+      </div>
+
+      <div class="story-right">
+        <img src="images/cafeee.png" alt="Coffee products">
+      </div>
+    </div>
+
+  </div>
+</section>
+  <section class="about-tiles">
+  <div class="container">
+
+    <div class="tiles-grid">
+
+      <!-- Left tile -->
+      <div class="tile" style="background-image:url('images/zzz.jpg');">
+        <div class="tile-overlay"></div>
+        <div class="tile-content">
+          <h3>Green Initiatives</h3>
+          <p>
+            We understand that taking care of Mother Earth is our responsibility and have initiated
+            several green practices keeping this in mind. We serve filter coffee in earthen pots and use
+            biodegradable cups and plates. Used coffee grounds are packed and given away at our stores.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right tile -->
+      <div class="tile" style="background-image:url('images/vv.jpg');">
+        <div class="tile-overlay"></div>
+        <div class="tile-content">
+          <h3>Social Responsibilities</h3>
+          <p>
+            Since the beginning of our journey, we strongly believed in creating equal opportunities
+            for everyone. We are proud to have senior citizens and specially-abled team members as part
+            of our workforce and culture.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="bean-section">
+  <div class="bean-bg"></div>
+
+  <!-- White content box (top-left) -->
+  <div class="bean-wrap">
+    <div class="bean-box">
+      <h4 class="bean-small-title">From bean to cup</h4>
+
+      <p class="bean-text">
+        We take care of the whole process, from picking of the ripest mountain coffee cherries to the
+        roasting of the beans for the best tasting cup in the world.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="products-section py-5" id="products">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="section-title m-0">Best Sellers</h2>
+      <button type="button" class="view-all-btn mt-2">VIEW ALL</button>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product1.html" class="product-link">
+              <img src="images/W.jpeg" alt="Classic Coffee Powder" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product1.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Classic Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 480.00</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product2.html" class="product-link">
+              <img src="images/ee.jpeg" alt="Premium Coffee" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product2.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Premium Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 600.00</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product3.html" class="product-link">
+              <img src="images/rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product3.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+          <p class="product-price">₹ 320.00</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product4.html" class="product-link">
+              <img src="images/WhatsApp Image 2026-03-04 at 1.46.01 PM.jpeg" alt="Mysore Coffee" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product4.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Mysore Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 560.00</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </footer><footer class="wb-footer">
+  <div class="wb-footer-wrap">
+
+    <!-- 1) Brand + Address -->
+    <div class="wb-footer-col">
+      <div class="wb-footer-brand">
+        <img src="images/World-Bean-Logo (1).webp" alt="World Bean Coffee" class="wb-footer-logo">
+        <span class="wb-footer-name">World Bean Coffee</span>
+      </div>
+
+      <h4 class="wb-footer-head">WORLD BEAN COFFEE PRIVATE LIMITED</h4>
+
+      <p class="wb-footer-text">
+    28, 80 Feet Rd, S.T. Bed, Cauvery Colony, Koramangala, Bengaluru, Karnataka 560034
+      </p>
+
+      <p class="wb-footer-text"><strong>CIN:</strong> U15400KA2015PTC078831</p>
+    </div>
+
+    <!-- 2) Links -->
+    <div class="wb-footer-col">
+      <ul class="wb-footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Categories</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Our Stores</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- 3) Links -->
+    <div class="wb-footer-col">
+      <ul class="wb-footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns &amp; Shipping</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Franchise &amp; Export</a></li>
+      </ul>
+    </div>
+
+    <!-- 4) Newsletter -->
+    <div class="wb-footer-col">
+      <h4 class="wb-footer-news">SIGN UP AND SAVE</h4>
+      <p class="wb-footer-text">
+        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+      </p>
+
+      <form class="wb-footer-form" action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" aria-label="Subscribe">
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </form>
+
+      <div class="wb-footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom center -->
+  <div class="wb-footer-bottom">
+    <p>© 2026 World Bean Coffee</p>
+    <p class="wb-powered">Powered by Shopify</p>
+  </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+
+  const onScroll = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 20);
+  };
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

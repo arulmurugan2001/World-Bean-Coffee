@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Stores | World Bean Coffee</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (required for navbar) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Leaflet (Map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="stores.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <!-- Top Social Bar -->
+    <div class="top-bar py-2">
+      <div class="container d-flex justify-content-end">
+        <div class="social-icons d-flex gap-3">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light about-navbar">
+      <div class="container position-relative">
+
+        <!-- Left search icon -->
+        <button class="icon-btn" type="button" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Center Logo -->
+        <a class="navbar-brand brand-center" href="index.html">
+          <img src="images/World-Bean-Logo (1).webp" alt="World Bean Logo" class="brand-logo">
+        </a>
+
+        <!-- Mobile toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#aboutNav"
+          aria-controls="aboutNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="aboutNav">
+          <ul class="navbar-nav w-100 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Categories</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Authentic Coffee Blends</a></li>
+                <li><a class="dropdown-item" href="#">Crafted Roasted Beans</a></li>
+                <li><a class="dropdown-item" href="#">Snacks &amp; Savouries</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+
+            <li class="nav-item d-none d-lg-block flex-grow-1"></li>
+
+            <li class="nav-item"><a class="nav-link active" href="stores.html">Our Stores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+            <li class="nav-item d-flex gap-3 ms-lg-3 mt-3 mt-lg-0">
+              <button class="icon-btn" type="button" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+              </button>
+              <button class="icon-btn" type="button" aria-label="Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE -->
+  <main class="stores-page">
+    <section class="stores-hero">
+      <h1 class="stores-title">Our Stores</h1>
+      <p class="stores-subtitle">
+        World Bean Coffee is growing across Bengaluru. Find the nearest store below.
+      </p>
+    </section>
+
+    <section class="stores-section">
+      <div class="stores-wrap">
+
+        <!-- LEFT PANEL -->
+        <aside class="stores-panel">
+          <div class="stores-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="storeSearch" type="text" placeholder="Search..." />
+          </div>
+
+          <div id="storesList" class="stores-list"></div>
+        </aside>
+
+        <!-- RIGHT MAP -->
+        <div class="stores-map">
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <section class="store-cards">
+  <div class="container">
+
+    <div class="store-grid">
+
+      <!-- Card 1 -->
+      <div class="store-card">
+        <div class="store-img">
+          <img src="images/koramangala.webp" alt="Monarch">
+        </div>
+        <h3 class="store-name">Monarch</h3>
+        <a class="store-btn" target="_blank"
+           href="https://maps.app.goo.gl/GB9j8VuZynwfBwLcA">
+          GET DIRECTION
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="store-card">
+        <div class="store-img">
+          <img src="images/jayanagar.webp" alt="T1 Kempegowda International Airport">
+        </div>
+        <h3 class="store-name">T1 Kempegowda International Airport</h3>
+        <a class="store-btn" target="_blank"
+           href="https://maps.app.goo.gl/MSDSAGpw96efMZie8">
+          GET DIRECTION
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="store-card">
+        <div class="store-img">
+          <img src="images/indiranagar.webp" alt="Lavelle Road">
+        </div>
+        <h3 class="store-name">Lavelle Road</h3>
+        <a class="store-btn" target="_blank"
+           href="https://maps.app.goo.gl/Ui511LGtwYBTQSVq9">
+          GET DIRECTION
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="presence-map">
+  <!-- background -->
+  <div class="presence-map-bg"></div>
+  <div class="presence-map-overlay"></div>
+
+  <div class="presence-map-wrap">
+
+    <!-- India outline PNG -->
+    <img src="images/india map.jpg" alt="India map" class="india-outline">
+
+    <!-- LEFT labels -->
+    <div class="pm-label left delhi">
+      <h3>DELHI</h3>
+      <p>Indira Gandhi International Airport, T2</p>
+      <span class="pm-line"></span>
+    </div>
+
+    <div class="pm-label left mumbai">
+      <h3>MUMBAI</h3>
+      <p>Reliance Corporate Park | The Capital<br>G Block BKC | ICICI Bank BKC</p>
+      <span class="pm-line"></span>
+    </div>
+
+    <div class="pm-label left karnataka">
+      <h3>KARNATAKA</h3>
+      <p>
+        Kempegowda International Airport T1 &amp; T2<br>
+        Mysore Forum Mall | Hassan - KR Puram<br>
+        Malnad College of Engineering<br>
+        Mangaluru International Airport
+      </p>
+      <span class="pm-line"></span>
+    </div>
+
+    <!-- RIGHT labels -->
+    <div class="pm-label right kolkata">
+      <h3>KOLKATA</h3>
+      <p>Netaji SCB International Airport</p>
+      <span class="pm-line"></span>
+    </div>
+
+    <div class="pm-label right hyderabad">
+      <h3>HYDERABAD</h3>
+      <p>Deloitte Towers | TCS Synergy Park</p>
+      <span class="pm-line"></span>
+    </div>
+
+    <div class="pm-label right chennai">
+      <h3>CHENNAI</h3>
+      <p>Chennai International Airport, Terminal 2</p>
+      <span class="pm-line"></span>
+    </div>
+
+  </div>
+</section>
+<section class="products-section py-5" id="products">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="section-title m-0">Best Sellers</h2>
+      <button type="button" class="view-all-btn mt-2">VIEW ALL</button>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product1.html" class="product-link">
+              <img src="images/W.jpeg" alt="Classic Coffee Powder" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product1.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Classic Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 480.00</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product2.html" class="product-link">
+              <img src="images/ee.jpeg" alt="Premium Coffee" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product2.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Premium Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 600.00</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product3.html" class="product-link">
+              <img src="images/rt.jpeg" alt="Classic Coffee 250g" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product3.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Classic Coffee Powder (250 g)</h3>
+          <p class="product-price">₹ 320.00</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <div class="product-image position-relative overflow-hidden">
+
+            <a href="product4.html" class="product-link">
+              <img src="images/WhatsApp Image 2026-03-04 at 1.46.01 PM.jpeg" alt="Mysore Coffee" class="img-fluid w-100 product-img">
+            </a>
+
+            <button class="cart-btn" type="button" aria-label="Add to cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+
+            <a href="product4.html" class="view-product-btn">VIEW PRODUCT</a>
+          </div>
+
+          <h3 class="product-title mt-3">Mysore Coffee Powder (200 g)</h3>
+          <p class="product-price">₹ 560.00</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="wb-footer">
+  <div class="wb-footer-wrap">
+
+    <!-- 1) Logo + Address -->
+    <div class="wb-foot-col">
+      <div class="wb-foot-brand">
+        <img src="images/World-Bean-Logo (1).webp" class="wb-foot-logo" alt="World Bean Coffee">
+        <span class="wb-foot-name">World Bean Coffee</span>
+      </div>
+
+      <h4 class="wb-foot-head">WORLD BEAN COFFEE PRIVATE LIMITED</h4>
+
+      <p class="wb-foot-text">
+          28, 80 Feet Rd, S.T. Bed, Cauvery Colony, Koramangala, Bengaluru, Karnataka 560034
+      </p>
+
+      <p class="wb-foot-text"><strong>CIN:</strong> U15400KA2015PTC078831</p>
+    </div>
+
+    <!-- 2) Links -->
+    <div class="wb-foot-col">
+      <ul class="wb-foot-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Our Categories</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="stores.html">Our Stores</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- 3) Links -->
+    <div class="wb-foot-col">
+      <ul class="wb-foot-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Returns &amp; Shipping</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Franchise &amp; Export</a></li>
+      </ul>
+    </div>
+
+    <!-- 4) Newsletter -->
+    <div class="wb-foot-col">
+      <h4 class="wb-foot-news">SIGN UP AND SAVE</h4>
+      <p class="wb-foot-text">
+        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+      </p>
+
+      <form class="wb-foot-form" action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" aria-label="Subscribe">
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </form>
+
+      <div class="wb-foot-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Center -->
+  <div class="wb-foot-bottom">
+    <p>© 2026 World Bean Coffee</p>
+    <p class="wb-powered">Powered by Shopify</p>
+  </div>
+</footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Stores JS -->
+  <script src="stores.js"></script>
+
+</body>
+</html>

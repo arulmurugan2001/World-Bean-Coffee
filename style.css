@@ -28,7 +28,39 @@ body{
 .site-navbar .container{
   position: relative;
 }
+/* ===== Sticky Header (works with Bootstrap) ===== */
+.site-header{
+  position: fixed !important;   /* override Bootstrap */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
+/* header background styles */
+.site-navbar{
+  transition: background .25s ease, box-shadow .25s ease;
+}
+
+/* at top (transparent) */
+.site-navbar{
+  background: rgba(0,0,0,0.20);
+  backdrop-filter: blur(8px);
+}
+
+/* on scroll */
+.site-header.is-scrolled .site-navbar{
+  background: rgba(0,0,0,0.85);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.20);
+}
+
+/* IMPORTANT: page content should not go under fixed header */
+body{
+  padding-top: 92px; /* adjust if needed */
+}
+
+/* REMOVE this if you have it (it breaks menu clicks) */
+/* .site-header { pointer-events: none; } */
 /* Perfect center */
 .brand-center{
   position: absolute;
@@ -295,7 +327,7 @@ body{
   position: relative;
   width: 100%;
   height: 420px;                 /* change height if you want */
-  background: url("mmm.png") center/cover no-repeat;  /* <-- your banner image */
+  background: url("images/mmm.png") center/cover no-repeat;  /* <-- your banner image */
   overflow: hidden;
 }
 
@@ -518,7 +550,7 @@ body{
 
 .hero-banner{
   /* change this to your image */
-  background-image: url("kkkk.png");
+  background-image: url("images/kkkk.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -601,7 +633,7 @@ body{
 .bestsellers-banner {
   height: 720px;              /* BIG */
   border-radius: 18px;
-  background-image: url("ChatGPT\ Image\ Mar\ 5\,\ 2026\,\ 12_25_14\ PM.png"); /* change this */
+  background-image: url("images/ChatGPT\ Image\ Mar\ 5\,\ 2026\,\ 12_25_14\ PM.png"); /* change this */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -656,7 +688,7 @@ body{
 .about-bg{
   position: absolute;
   inset: 0;
-  background: url("arrr.png") center/cover no-repeat; /* <-- change */
+  background: url("images/arrr.png") center/cover no-repeat; /* <-- change */
   transform: scale(1.02);
 }
 
@@ -1327,7 +1359,7 @@ body{
   position: absolute;
   inset: 0;
 
-  background-image: url("cafeee.png");
+  background-image: url("images/cafeee.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 35%; /* move image down (hide brand) */
